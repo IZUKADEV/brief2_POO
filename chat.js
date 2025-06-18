@@ -1,4 +1,4 @@
-import { Animal, Car } from './car.js';
+import { Animal } from './car.js';
 class ChatA extends Animal {
     faireduBruit() {
         console.log("Le bruit du chat");
