@@ -1,5 +1,3 @@
-
-
 class Vehicule {
     #marque;
     #model;
@@ -94,28 +92,4 @@ class Animal {
     }
 }
 
-
-
-class ChienA extends Animal {
-    #Chien = "Chien";
-    faireduBruit() {
-        console.log("Le bruit du chien");
-    }
-}
-
-const Chien = new ChienA();
-Chien.faireduBruit()
-
-class ChatA extends Animal {
-    faireduBruit() {
-        console.log("Le bruit du chat");
-    }
-}
-
-const Chat = new ChatA();
-Chat.faireduBruit()
-
-
-
-
-export default Car;
+export { Animal, Car };
