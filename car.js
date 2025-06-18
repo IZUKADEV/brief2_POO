@@ -1,3 +1,5 @@
+
+
 class Vehicule {
     #marque;
     #model;
@@ -116,3 +118,4 @@ Chat.faireduBruit()
 
 
 
+export default Car;
