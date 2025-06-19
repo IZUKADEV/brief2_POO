@@ -5,7 +5,7 @@ class Klaxon extends Car {
         super(marque, model, year, color);
     }
     klaxon() {
-        console.log("Le klaxon de la voiture");
+        console.log(`${this.marque} | Le klaxon de la voiture`);
     }
 }
 

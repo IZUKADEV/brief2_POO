@@ -55,7 +55,7 @@ class Car extends Vehicule {
     }
     
     afficherDetails() {
-        console.log(`${this.marque} ${this.model} ${this.year} ${this.#color}`);
+        super.afficherDetails() || console.log(`${this.#color}`);
     }
 }
 
@@ -72,24 +72,44 @@ const Citroen = new Car("Citroen", "C3", 2022);
 Citroen.color = "Rouge";
 Citroen.afficherDetails();
 
+const Toyota = new Car("Toyota", "Corolla", 2023);
+Toyota.color = "Noir";
+Toyota.afficherDetails();
 
-class Animal {
-    #Chien;
-    #Chat;
-    constructor(chien, chat) {
-        this.#Chien = chien;
-        this.#Chat = chat;
-    }
+const Honda = new Car("Honda", "Civic", 2024);
+Honda.color = "Blanc";
+Honda.afficherDetails();
 
-    get Chien() {
-        return this.#Chien;
-    }
-    get Chat() {
-        return this.#Chat;
-    }
-    faireduBruit() {
-        console.log("Le bruit de l'animal");
-    }
-}
+const Susuki = new Car("Susuki", "Swift", 2025);
+Susuki.color = "Vert";
+Susuki.afficherDetails();
 
-export { Animal, Car };
+const Ford = new Car("Ford", "Fiesta", 2026);
+Ford.color = "Bleu";
+Ford.afficherDetails();
+
+const BMW = new Car("BMW", "M3", 2027);
+BMW.color = "Rouge";
+BMW.afficherDetails();
+
+const Mercedes = new Car("Mercedes", "S-Class", 2028);
+Mercedes.color = "Noir";
+Mercedes.afficherDetails();
+
+const Audi = new Car("Audi", "A4", 2029);
+Audi.color = "Rouge";
+Audi.afficherDetails();
+
+const Porsche = new Car("Porsche", "911", 2030);
+Porsche.color = "Rouge";
+Porsche.afficherDetails();
+
+const Nissan = new Car("Nissan", "GTR", 2031);
+Nissan.color = "Rouge";
+Nissan.afficherDetails();
+
+const Subaru = new Car("Subaru", "Impreza", 2032);
+Subaru.color = "Rouge";
+Subaru.afficherDetails();
+
+export default Car;

@@ -1,4 +1,4 @@
-import { Animal } from './car.js';
+import Animal from '../animal.js';
 
 class ChienA extends Animal {
     faireduBruit() {
